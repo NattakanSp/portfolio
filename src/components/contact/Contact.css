@@ -1,0 +1,116 @@
+.c {
+  height: 80vh;
+  position: relative;
+}
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: rgba(81, 207, 238, 0.938);
+  position: absolute;
+}
+.c-wrapper {
+  display: flex;
+  padding: 50px;
+}
+.c-left {
+  flex: 1;
+}
+.c-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: column;
+}
+.c-title {
+  font-size: 60px;
+  width: 80%;
+}
+.c-info-item {
+  display: flex;
+  margin: 50px 0px;
+  font-weight: 300;
+}
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.c-desc {
+  font-weight: 200;
+}
+form {
+  margin-top: 20px;
+}
+input {
+  width: 50%;
+  height: 50px;
+  border-style: none;
+  border-radius: 1px;
+  border-bottom: 1px solid rgb(158, 156, 154);
+  margin: 10px 0px;
+  padding-left: 10px;
+}
+textarea {
+  width: 100%;
+}
+button {
+  border: none;
+  padding: 15px;
+  background-color: brown;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1199px) {
+  .c {
+    margin-top: 30px;
+    height: 100vh;
+    position: relative;
+  }
+}
+@media screen and (max-width: 991px) {
+  .c {
+    margin-top: 30px;
+    height: 90vh;
+    position: relative;
+    overflow-y: hidden;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .c-wrapper {
+    flex-direction:  column;
+  }
+  .c-title{
+    width: 80%;
+    font-size: 40px;
+  }
+  .c-info-item{
+    margin:20px 0px ;
+  }
+  .c-desc {
+    display: none;
+  }
+  form {
+    margin-top: 0px;
+    flex-wrap: wrap;
+  }
+  input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0px;
+  }
+  textarea {
+    margin-top: 10px;
+  }
+
+}
+@media screen and (max-width: 390px) {
+  .c{
+    height: 100vh;
+  }
+}
